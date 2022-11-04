@@ -32,8 +32,11 @@
     },
     "deploy": {
       "executor": "nx:run-commands",
+      "outputs": [
+        "{workspaceRoot}/.yalc/packages/@experiment-nx-and-firebase/my-lib-2"
+      ],
       "options": {
-        "command": "yalc publish --store-folder ./.yalc dist/packages/my-lib-2"
+        "command": "yalc push --store-folder ./.yalc dist/packages/my-lib-2 --changed"
       }
     }
   },
