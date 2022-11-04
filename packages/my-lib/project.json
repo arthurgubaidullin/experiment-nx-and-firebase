@@ -32,7 +32,7 @@
     "deploy": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "yalc publish --store-folder ./yalc dist/packages/my-lib"
+        "command": "yalc publish --store-folder ./.yalc dist/packages/my-lib"
       }
     }
   },
