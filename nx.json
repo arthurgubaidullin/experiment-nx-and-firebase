@@ -23,7 +23,9 @@
     "deploy": {
       "dependsOn": ["build", "^deploy"],
       "inputs": ["production", "^production"],
-      "outputs": ["{workspaceRoot}/.yalc/packages/{projectRoot}"]
+      "outputs": [
+        "{workspaceRoot}/.yalc/packages/@experiment-nx-and-firebase/{projectRoot}"
+      ]
     }
   },
   "namedInputs": {
