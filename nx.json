@@ -22,8 +22,8 @@
     },
     "deploy": {
       "dependsOn": ["build", "^deploy"],
-      "inputs": ["{workspaceRoot}/dist/packages/{projectRoot}/**/*"],
-      "outputs": ["{workspaceRoot}/.yalc/packages/{projectRoot}/**/*"]
+      "inputs": ["production", "^production"],
+      "outputs": ["{workspaceRoot}/.yalc/packages/{projectRoot}"]
     }
   },
   "namedInputs": {
